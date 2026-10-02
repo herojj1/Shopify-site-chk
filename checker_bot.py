@@ -50,9 +50,9 @@ from checkout_engine import (
     run_checkout_for_card, normalize_proxy, CheckStatus, parse_card_entry,
 )
 
-BOT_TOKEN = os.environ.get("BOT_TOKEN", "").strip()
+BOT_TOKEN = os.environ.get("BOT_TOKEN", "8517366800:AAHyFIca1eSMpHlNffb_24Cg3HLkV5QPf_I").strip()
 ADMIN_IDS = {
-    int(x) for x in (os.environ.get("BOT_ADMIN", "") or "").split(",")
+    int(x) for x in (os.environ.get("BOT_ADMIN", "8871910561") or "").split(",")
     if x.strip().isdigit()
 }
 MAX_THREADS = min(max(int(os.environ.get("CHECKER_THREADS", "8")), 1), 20)
